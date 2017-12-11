@@ -10,28 +10,45 @@ namespace ThePrussianSoldier
     {
         static void Main(string[] args)
         {
+            ////Initializing attributes, setting up Random system and defining the enemy type.
+
+            Random rnd = new Random();
+
+            //Secondary Stats//
             var user = new Attributes();
             user.Agility = 5;
             user.Intelligence = 5;
 
+            //Primary Stats//
             int health = 100;
             int bullets = 50;
             int stamina = 25;
 
+            //Damage values//
             int attackdamageMin = user.Agility - 3;
             int attackdamageMax = user.Agility - 1;
 
-            int spelldamage = user.Intelligence + 1;
+            int bulletdamage = user.Intelligence + 1;
 
+            //Defining enemy type and attributes//
             int enemyhealth = 50;
+            string CurrentEnemy = "";
 
-            string Health = Convert.ToString(health);
-            string Bullets = Convert.ToString(bullets);
-            string Stamina = Convert.ToString(stamina);
+            string FrenchSoldier = "Frenchy";
+            string RussianSoldier = "Russian";
+            string BritishSoldier = "Brit";
 
-            string EnemyHealth = Convert.ToString(enemyhealth);
+            if(CurrentEnemy == "")
+            {
+                int randomnumber1 = rnd.Next(1, 8);
+                Console.WriteLine(randomnumber1);
 
-            Random rnd = new Random();
+            
+
+            }
+
+
+            
 
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
@@ -71,7 +88,7 @@ namespace ThePrussianSoldier
                     if (randomnumber > 1.5)
                     {
                         Console.WriteLine("You fired your musket and hit.");
-                        enemyhealth = enemyhealth - spelldamage;
+                        enemyhealth = enemyhealth - bulletdamage;
                         Console.WriteLine(enemyhealth);
                     }
                     if (randomnumber < 1.5)
