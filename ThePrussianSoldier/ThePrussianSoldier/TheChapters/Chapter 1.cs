@@ -11,7 +11,7 @@ namespace ThePrussianSoldier.TheChapters
     {
         public Chapter_1()
         {
-            string First = "The War begins between France and the Prussia. You are sent to the front lines in service of the King of Prussia. ";
+            string First = "The War begins between France and Prussia. You are sent to the front lines in service of the King of Prussia. ";
             string Second = "The Battlefield is fierce and large, spanning as far as the eye can see. The French may have more numbers in this particular battle, ";
             string Third = "but the Prussian way of organizing the army allows for small squads to operate semi autonomously on the battlefield.";
             string Fourth = "When came the time, to be organized into these squads, you were placed with the: [Scouts / Vanguard / Cavalry]";
@@ -47,35 +47,42 @@ namespace ThePrussianSoldier.TheChapters
                 System.Threading.Thread.Sleep(50);
             }
             Console.WriteLine("");
+            Choices:
             string Choice = Console.ReadLine();
-            if(Choice == "Scouts")
+            if(Choice != null)
             {
-                for (int i = 0; i < Scouts.Length; i++)
+                if (Choice == "Scouts")
                 {
-                    Console.Write(Scouts[i]);
-                    System.Threading.Thread.Sleep(50);
+                    for (int i = 0; i < Scouts.Length; i++)
+                    {
+                        Console.Write(Scouts[i]);
+                        System.Threading.Thread.Sleep(50);
+                    }
+                    Console.WriteLine("");
                 }
-                Console.WriteLine("");
-            }
-            if (Choice == "Cavalry")
-            {
-                for (int i = 0; i < Cavalry.Length; i++)
+                if (Choice == "Cavalry")
                 {
-                    Console.Write(Cavalry[i]);
-                    System.Threading.Thread.Sleep(50);
+                    for (int i = 0; i < Cavalry.Length; i++)
+                    {
+                        Console.Write(Cavalry[i]);
+                        System.Threading.Thread.Sleep(50);
+                    }
+                    Console.WriteLine("");
                 }
-                Console.WriteLine("");
-            }
-            if (Choice == "Vanguard")
-            {
-                for (int i = 0; i < Vanguard.Length; i++)
+                if (Choice == "Vanguard")
                 {
-                    Console.Write(Vanguard[i]);
-                    System.Threading.Thread.Sleep(50);
+                    for (int i = 0; i < Vanguard.Length; i++)
+                    {
+                        Console.Write(Vanguard[i]);
+                        System.Threading.Thread.Sleep(50);
+                    }
+                    Console.WriteLine("");
                 }
-                Console.WriteLine("");
+                else
+                {
+                    goto Choices;
+                }
             }
-           
             for (int i = 0; i < Fifth.Length; i++)
             {
                 Console.Write(Fifth[i]);

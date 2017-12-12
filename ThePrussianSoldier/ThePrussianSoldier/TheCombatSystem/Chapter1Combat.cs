@@ -171,13 +171,13 @@ namespace ThePrussianSoldier.Cha
                     int randomnumber = rnd.Next(1, 100);
                     if (randomnumber <= 50)
                     {
-                        enemyhealth = enemyhealth - attackdamageMin;
+                        enemyhealth2 = enemyhealth2 - attackdamageMin;
                         Console.WriteLine("You charge forth in the name of the King");
                         Console.WriteLine("Your foe is now reduced to: {0}HP", enemyhealth2);
                     }
                     else if (randomnumber >= 51)
                     {
-                        enemyhealth = enemyhealth - attackdamageMax;
+                        enemyhealth2 = enemyhealth2 - attackdamageMax;
                         Console.WriteLine(enemyhealth);
                         Console.WriteLine("You charge forth in the name of the King");
                         Console.WriteLine("Your foe is now reduced to: {0}HP", enemyhealth2);
@@ -189,7 +189,7 @@ namespace ThePrussianSoldier.Cha
                     if (randomnumber > 1.5)
                     {
                         Console.WriteLine("You fired your musket and hit.");
-                        enemyhealth = enemyhealth - bulletdamage;
+                        enemyhealth2 = enemyhealth2 - bulletdamage;
                         Console.WriteLine(enemyhealth2);
                     }
                     if (randomnumber < 1.5)
