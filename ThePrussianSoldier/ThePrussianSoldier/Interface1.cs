@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThePrussianSoldier
 {
-    class Program
+    interface Interface1
     {
-        static void Main(string[] args)
-        {
-            
-        }
-
     }
 }
-
