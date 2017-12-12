@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThePrussianSoldier.Initialization__Start_Screen;
+using ThePrussianSoldier.TheChapters;
 using WMPLib;
 
 namespace ThePrussianSoldier
@@ -15,7 +16,7 @@ namespace ThePrussianSoldier
         {
             
             WindowsMediaPlayer myplayer = new WindowsMediaPlayer();
-            myplayer.URL = "C://Users//opilane//Desktop//GitHub//TheGame//Prussia - Preußens Gloria.mp3";
+            myplayer.URL = "Prussia - Preußens Gloria.mp3";
             myplayer.controls.play();
             myplayer.settings.setMode("loop", true);
 
@@ -45,11 +46,12 @@ namespace ThePrussianSoldier
             Console.WriteLine("                       |---------|");
 
             Console.WriteLine("Please enter the name of the Command, that you want to execute.");
+            Console.WriteLine("Note: Please play in Fullscreen");
             string FirstAction = Console.ReadLine();
 
             if (FirstAction == "Start")
             {
-                var StartGame = new Introduction_and_Character_Creation();
+                var StartGame = new Chapter_1();
             }
 
 

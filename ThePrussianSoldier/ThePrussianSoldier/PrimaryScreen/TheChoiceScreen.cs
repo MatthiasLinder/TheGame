@@ -11,33 +11,52 @@ namespace ThePrussianSoldier
     {
         public TheChoiceScreen()
         {
-            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("You are marching along a lonely road, what do you do?");
-            Console.WriteLine("[Town, Patrol, Guard, Rest, Train]");
+            int ChapterDeterminant = 0;
 
-            string Answer = Console.ReadLine();
-
-            if(Answer == "Town")
+            while (ChapterDeterminant == 0)
             {
-                
-            }
-            if (Answer == "Patrol")
-            {
+                Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("You are marching along a lonely road, what do you do?");
+                Console.WriteLine("[Town, Patrol, Guard, Rest, Train]");
+
+                string Answer = Console.ReadLine();
+
+                if (Answer == "Town")
+                {
+                    Console.WriteLine("What do you wish to purchase whilst in the Town?");
+                    Console.WriteLine("[Weapons Salesman, Armorer, Apothecary]");
+                    string TownAnswer = Console.ReadLine();
+                    if(TownAnswer == "Weapons Salesman")
+                    {
+
+                    }
+                    if (TownAnswer == "Armorer")
+                    {
+
+                    }
+                    if (TownAnswer == "Apothecary")
+                    {
+
+                    }
+                }
+                if (Answer == "Patrol")
+                {
+
+                }
+                if (Answer == "Guard")
+                {
+
+                }
+                if (Answer == "Rest")
+                {
+
+                }
+                if (Answer == "Train")
+                {
+
+                }
 
             }
-            if (Answer == "Guard")
-            {
-
-            }
-            if (Answer == "Rest")
-            {
-
-            }
-            if (Answer == "Train")
-            {
-
-            }
-
         }
     }
 }

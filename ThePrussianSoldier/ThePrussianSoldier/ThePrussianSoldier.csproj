@@ -54,6 +54,7 @@
     <Compile Include="TheChapters\Chapter 5.cs" />
     <Compile Include="PrimaryScreen\TheChoiceScreen.cs" />
     <Compile Include="TheCombatSystem\Attributes.cs" />
+    <Compile Include="TheCombatSystem\Chapter1Combat.cs" />
     <Compile Include="TheCombatSystem\TheCombatSystem.cs" />
   </ItemGroup>
   <ItemGroup>
