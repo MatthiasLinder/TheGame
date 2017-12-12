@@ -40,16 +40,25 @@ namespace ThePrussianSoldier
 
             if(CurrentEnemy == "")
             {
+                //Determine the enemy type//
                 int randomnumber1 = rnd.Next(1, 8);
                 Console.WriteLine(randomnumber1);
-
-            
-
+                if(randomnumber1 >= 6)
+                {
+                    Console.WriteLine("British Soldier");
+                    CurrentEnemy = "Brit";
+                }
+                if(randomnumber1 <= 3)
+                {
+                    Console.WriteLine("French Soldier");
+                    CurrentEnemy = "Frenchy";
+                }
+                if (randomnumber1 >= 3 && randomnumber1 <= 6)
+                {
+                    Console.WriteLine("Russian Soldier");
+                    CurrentEnemy = "Russian";
+                }
             }
-
-
-            
-
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
             while (enemyhealth > 0)
@@ -130,6 +139,95 @@ namespace ThePrussianSoldier
                     Console.WriteLine("You fled the battlefield");
                     break;
                 }
+
+                //ENEMY PHASE//
+                //Takes the defined enemy type, random numbers decide the attack type.
+
+                //BRIT
+                if(CurrentEnemy == BritishSoldier)
+                {
+                    int randomnumberBRI = rnd.Next(1, 3);
+                    Console.WriteLine(randomnumberBRI);
+                    if (randomnumberBRI == 1)
+                    {
+                        Console.WriteLine("");
+                        health = health - 1;
+                        Console.WriteLine("The Brit Engages");
+                        Console.WriteLine(health);
+                    }
+                    if (randomnumberBRI == 2)
+                    {
+                        Console.WriteLine("");
+                        health = health - 2;
+                        Console.WriteLine("The Brit Shoots his Rifle");
+                        Console.WriteLine(health);
+                    }
+                    if(randomnumberBRI == 3)
+                    {
+                        Console.WriteLine("");
+                        health = health - 3;
+                        Console.WriteLine("The Brit calls for help. Bullets fly towards you.");
+                        Console.WriteLine(health);
+                    }
+                }
+
+                //FRENCHY
+                if (CurrentEnemy == FrenchSoldier)
+                {
+                    int randomnumberFRN = rnd.Next(1, 3);
+                    Console.WriteLine(randomnumberFRN);
+                    if (randomnumberFRN == 1)
+                    {
+                        Console.WriteLine("");
+                        health = health - 1;
+                        Console.WriteLine("The Frenchy Engages");
+                        Console.WriteLine(health);
+                    }
+                    if (randomnumberFRN == 2)
+                    {
+                        Console.WriteLine("");
+                        health = health - 2;
+                        Console.WriteLine("The Frenchy Shoots his Rifle");
+                        Console.WriteLine(health);
+                    }
+                    if (randomnumberFRN == 3)
+                    {
+                        Console.WriteLine("");
+                        health = health - 3;
+                        Console.WriteLine("The Frenchy calls for help. Bullets fly towards you.");
+                        Console.WriteLine(health);
+                    }
+                }
+
+                //RUSSIAN
+                if (CurrentEnemy == RussianSoldier)
+                {
+                    int randomnumberRUS = rnd.Next(1, 3);
+                    Console.WriteLine(randomnumberRUS);
+                    
+                    if (randomnumberRUS == 1)
+                    {
+                        Console.WriteLine("");
+                        health = health - 1;
+                        Console.WriteLine("The Russian Engages");
+                        Console.WriteLine(health);
+                    }
+                    if (randomnumberRUS == 2)
+                    {
+                        Console.WriteLine("");
+                        health = health - 2;
+                        Console.WriteLine("The Russian Shoots his Rifle");
+                        Console.WriteLine(health);
+                    }
+                    if (randomnumberRUS == 3)
+                    {
+                        Console.WriteLine("");
+                        health = health - 3;
+                        Console.WriteLine("The Russian calls for help. Bullets fly towards you.");
+                        Console.WriteLine(health);
+                    }
+                }
+
                 Console.WriteLine("---------------------------------------------------------------------------------*-*PRUSSEN-GLORIA*-*------------------");
             }
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
