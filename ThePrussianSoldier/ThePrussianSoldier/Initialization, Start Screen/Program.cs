@@ -14,7 +14,6 @@ namespace ThePrussianSoldier
         static void Main(string[] args)
         {
             
-            int musicnostop = 1;
             WindowsMediaPlayer myplayer = new WindowsMediaPlayer();
             myplayer.URL = "C://Users//opilane//Desktop//GitHub//TheGame//Prussia - Preußens Gloria.mp3";
             myplayer.controls.play();
