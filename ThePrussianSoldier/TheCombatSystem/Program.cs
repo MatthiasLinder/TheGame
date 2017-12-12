@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThePrussianSoldier
+namespace TheCombatSystem
 {
-    class Class
+    class Program
     {
-        static void Main(string[] args)
+        static void NotMain(string[] args)
         {
             ////Initializing attributes, setting up Random system and defining the enemy type.
 

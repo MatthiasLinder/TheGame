@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D4BE9EE-0AFA-46F6-8BAB-6FA504E20B3D}</ProjectGuid>
+    <ProjectGuid>{13BD97FF-E76B-4C21-B256-82942640739A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ThePrussianSoldier</RootNamespace>
-    <AssemblyName>ThePrussianSoldier</AssemblyName>
+    <RootNamespace>TheCombatSystem</RootNamespace>
+    <AssemblyName>TheCombatSystem</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
