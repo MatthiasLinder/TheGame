@@ -8,7 +8,7 @@ namespace TheCombatSystem
 {
     class Program
     {
-        static void NotMain(string[] args)
+        static void Main(string[] args)
         {
             ////Initializing attributes, setting up Random system and defining the enemy type.
 
