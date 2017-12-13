@@ -9,8 +9,7 @@ namespace ThePrussianSoldier
 {
     class TheChoiceScreen
     {
-        public int Gold { get; set; }
-
+        
         public TheChoiceScreen()
         {
             int ChapterDeterminant = 0;
@@ -30,9 +29,7 @@ namespace ThePrussianSoldier
                     string TownAnswer = Console.ReadLine();
                     if(TownAnswer == "Weapons Salesman")
                     {
-                        Gold = Gold - 100;
-                        Console.WriteLine(Gold);
-                        break;
+                        
                     }
                     if (TownAnswer == "Armorer")
                     {

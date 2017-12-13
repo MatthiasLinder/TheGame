@@ -8,6 +8,6 @@ namespace ThePrussianSoldier.PrimaryScreen
 {
     class Inventory
     {
-        public int Gold { get; set; }
+        
     }
 }

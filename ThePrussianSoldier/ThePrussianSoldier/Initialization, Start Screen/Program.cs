@@ -62,9 +62,7 @@ namespace ThePrussianSoldier
                 //var ToThe1stFight = new Chapter1Combat();
 
                 var PrimaryInformation = new PrimaryInformation();
-                PrimaryInformation.Gold = 1000;
-                
-                //int Bullets = 50;
+                var GoldPrimary = PrimaryInformation.Gold;
 
                 var ToTheChoiceScreen1 = new TheChoiceScreen();
 
