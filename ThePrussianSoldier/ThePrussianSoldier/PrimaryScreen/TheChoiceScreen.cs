@@ -9,8 +9,17 @@ namespace ThePrussianSoldier
 {
     class TheChoiceScreen
     {
-        
-        public TheChoiceScreen()
+        PrimaryInformation Info;
+        int Gold = 500;
+        public int GetGold()
+        {
+            return Gold;
+        }
+        public TheChoiceScreen(PrimaryInformation info)
+        {
+            Info = info;
+        }
+        public void Choices()
         {
             int ChapterDeterminant = 0;
 
@@ -25,17 +34,20 @@ namespace ThePrussianSoldier
                 if (Answer == "Town")
                 {
                     Console.WriteLine("What do you wish to purchase whilst in the Town?");
-                    Console.WriteLine("[Weapons Salesman, Armorer, Apothecary]");
+                    Console.WriteLine("[Weapons, Armor, Consumables]");
                     string TownAnswer = Console.ReadLine();
-                    if(TownAnswer == "Weapons Salesman")
+                    if (TownAnswer == "Weapons")
                     {
-                        
+                        Gold = Gold - 100;
+                        Console.WriteLine(Gold);                        
+                        Info.UpdateGold(Gold);
+                        break;
                     }
-                    if (TownAnswer == "Armorer")
+                    if (TownAnswer == "Armor")
                     {
 
                     }
-                    if (TownAnswer == "Apothecary")
+                    if (TownAnswer == "Consumables")
                     {
 
                     }
@@ -56,7 +68,6 @@ namespace ThePrussianSoldier
                 {
 
                 }
-
             }
         }
     }

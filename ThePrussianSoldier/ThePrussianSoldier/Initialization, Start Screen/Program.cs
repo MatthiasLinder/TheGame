@@ -13,9 +13,11 @@ namespace ThePrussianSoldier
 {
     class Program
     {
+        static int Gold;
         static void Main(string[] args)
         {
-            
+
+
             WindowsMediaPlayer myplayer = new WindowsMediaPlayer();
             myplayer.URL = "Prussia - Preußens Gloria.mp3";
             myplayer.controls.play();
@@ -55,21 +57,28 @@ namespace ThePrussianSoldier
 
             if (FirstAction == "Start")
             {
-
-
-
-
+                
                 //var ToThe1stFight = new Chapter1Combat();
 
-                var PrimaryInformation = new PrimaryInformation();
-                var GoldPrimary = PrimaryInformation.Gold;
+                //var PrimaryInformation = new PrimaryInformation();
+                //var Gold = PrimaryInformation.Gold;
 
-                var ToTheChoiceScreen1 = new TheChoiceScreen();
+                
+
+                var h = new PrimaryInformation();
+                var ToTheChoiceScreen1 = new TheChoiceScreen(h);
+                ToTheChoiceScreen1.Choices();
+                
+                Gold = h.GetGold();
+                Console.WriteLine(Gold);
 
                 var StartGame = new Chapter_1();
-                var hit = StartGame.HitPoints;
 
-                var ToTheChoiceScreen2 = new TheChoiceScreen();
+
+
+                //var hit = StartGame.HitPoints;
+
+                ToTheChoiceScreen1.Choices();
             }
 
 

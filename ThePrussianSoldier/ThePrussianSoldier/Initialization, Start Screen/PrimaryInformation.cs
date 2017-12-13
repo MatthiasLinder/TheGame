@@ -9,5 +9,17 @@ namespace ThePrussianSoldier.Initialization__Start_Screen
     class PrimaryInformation
     {
         public int Gold { get; set; }
+        public int GetGold()
+        {
+            return Gold;
+        }
+        public PrimaryInformation()
+        {
+           
+        }
+        public void UpdateGold(int gold)
+        {
+            Gold = gold;
+        }
     }
 }
