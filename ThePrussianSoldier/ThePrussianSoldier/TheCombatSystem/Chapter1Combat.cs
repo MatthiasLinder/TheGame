@@ -270,7 +270,7 @@ namespace ThePrussianSoldier.Cha
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
             Console.WriteLine("You have passed the first chapter.");
-            var ToTheChoiceScreen = new TheChoiceScreen();
+            
         }
     }
 }

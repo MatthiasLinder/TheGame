@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThePrussianSoldier.Cha;
 using ThePrussianSoldier.Initialization__Start_Screen;
 using ThePrussianSoldier.TheChapters;
 using WMPLib;
@@ -49,9 +50,28 @@ namespace ThePrussianSoldier
             Console.WriteLine("Note: Please play in Fullscreen");
             string FirstAction = Console.ReadLine();
 
+
+
+
             if (FirstAction == "Start")
             {
+
+
+
+
+                //var ToThe1stFight = new Chapter1Combat();
+
+                var PrimaryInformation = new PrimaryInformation();
+                PrimaryInformation.Gold = 1000;
+                
+                //int Bullets = 50;
+
+                var ToTheChoiceScreen1 = new TheChoiceScreen();
+
                 var StartGame = new Chapter_1();
+                var hit = StartGame.HitPoints;
+
+                var ToTheChoiceScreen2 = new TheChoiceScreen();
             }
 
 

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Initialization, Start Screen\Introduction and Character Creation.cs" />
     <Compile Include="Initialization, Start Screen\NewCharcater.cs" />
+    <Compile Include="Initialization, Start Screen\PrimaryInformation.cs" />
     <Compile Include="Initialization, Start Screen\Program.cs" />
     <Compile Include="PrimaryScreen\Inventory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
