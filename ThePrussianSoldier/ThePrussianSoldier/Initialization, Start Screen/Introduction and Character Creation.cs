@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThePrussianSoldier.PrimaryScreen;
 using ThePrussianSoldier.TheChapters;
 
 namespace ThePrussianSoldier.Initialization__Start_Screen

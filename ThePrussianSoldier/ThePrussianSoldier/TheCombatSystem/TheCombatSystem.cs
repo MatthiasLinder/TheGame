@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThePrussianSoldier.Initialization__Start_Screen;
 
 namespace ThePrussianSoldier
 {
     class TheCombatSystem
-    {       
+    {
+        PrimaryInformation Info;
+        public TheCombatSystem(PrimaryInformation info)
+        {
+            Info = info;
+        }
+        
 
-        public TheCombatSystem()
+        public void Combat()
         {
             ////Initializing attributes, setting up Random system and defining the enemy type.
 
             Random rnd = new Random();
+            Console.WriteLine("");
 
             //Secondary Stats//
             var user = new Attributes();
@@ -30,7 +38,7 @@ namespace ThePrussianSoldier
             int attackdamageMax = user.Agility - 1;
 
             int bulletdamage = user.Intelligence + 1;
-
+            
             //Defining enemy type and attributes//
             int enemyhealth = 50;
             string CurrentEnemy = "";
@@ -62,9 +70,11 @@ namespace ThePrussianSoldier
             }
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
-            while (enemyhealth > 0)
+            bool Condition = false;
+
+            while (enemyhealth > 0 || Condition == true)
             {
-                Action:
+                
                 Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("");
                 Console.WriteLine("Choose your action son of the mighty Prussia:");
@@ -132,7 +142,7 @@ namespace ThePrussianSoldier
                     }
                     else
                     {
-                        goto Action;
+                        Condition = false;
                     }
                 }
                 if (action == "Flee")

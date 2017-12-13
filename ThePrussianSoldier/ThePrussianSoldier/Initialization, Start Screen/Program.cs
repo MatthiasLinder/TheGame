@@ -14,6 +14,7 @@ namespace ThePrussianSoldier
     class Program
     {
         static int Gold;
+        static int HP;
         static void Main(string[] args)
         {
 
@@ -51,32 +52,33 @@ namespace ThePrussianSoldier
             Console.WriteLine("Please enter the name of the Command, that you want to execute.");
             Console.WriteLine("Note: Please play in Fullscreen");
             string FirstAction = Console.ReadLine();
-
-
-
+            
+            //The game initiates from scratch...
 
             if (FirstAction == "Start")
             {
-                
-                //var ToThe1stFight = new Chapter1Combat();
+                //The 1-st Chapter begins...
 
+                //var ToThe1stFight = new Chapter1Combat();
                 //var PrimaryInformation = new PrimaryInformation();
                 //var Gold = PrimaryInformation.Gold;
 
-                
-
+                //ENTER THE CHOICE SCREEN.
                 var h = new PrimaryInformation();
                 var ToTheChoiceScreen1 = new TheChoiceScreen(h);
                 ToTheChoiceScreen1.Choices();
-                
                 Gold = h.GetGold();
                 Console.WriteLine(Gold);
 
+                
+                HP = h.GetHP();
+                Console.WriteLine(HP);
+                //Enter Combat
+                var enterCombat = new TheCombatSystem(h);
+                enterCombat.Combat();
+
+
                 var StartGame = new Chapter_1();
-
-
-
-                //var hit = StartGame.HitPoints;
 
                 ToTheChoiceScreen1.Choices();
             }

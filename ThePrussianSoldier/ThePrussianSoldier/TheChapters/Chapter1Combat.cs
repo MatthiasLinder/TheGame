@@ -38,9 +38,10 @@ namespace ThePrussianSoldier.Cha
 
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
-            while (enemyhealth > 0)
+            bool Condition = false;
+
+            while (enemyhealth > 0 || Condition == true)
             {
-                Action:
                 Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("");
                 Console.WriteLine("Choose your action son of the mighty Prussia:");
@@ -108,7 +109,7 @@ namespace ThePrussianSoldier.Cha
                     }
                     else
                     {
-                        goto Action;
+                        Condition = false;
                     }
                 }
                 if (action == "Flee")
