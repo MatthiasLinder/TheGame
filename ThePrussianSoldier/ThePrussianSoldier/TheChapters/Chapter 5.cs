@@ -8,5 +8,9 @@ namespace ThePrussianSoldier.TheChapters
 {
     class Chapter_5
     {
+        public Chapter_5()
+        {
+            Console.WriteLine("Chapter5");
+        }
     }
 }

@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Initialization, Start Screen\1.3Introduction and Character Creation.cs" />
-    <Compile Include="Initialization, Start Screen\NewCharcater.cs" />
     <Compile Include="Initialization, Start Screen\1.2PrimaryInformation.cs" />
     <Compile Include="Initialization, Start Screen\1.1Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,8 +52,6 @@
     <Compile Include="TheChapters\Chapter 4.cs" />
     <Compile Include="TheChapters\Chapter 5.cs" />
     <Compile Include="PrimaryScreen\TheChoiceScreen.cs" />
-    <Compile Include="TheCombatSystem\Attributes.cs" />
-    <Compile Include="TheChapters\Chapter1Combat.cs" />
     <Compile Include="TheCombatSystem\TheCombatSystem.cs" />
   </ItemGroup>
   <ItemGroup>

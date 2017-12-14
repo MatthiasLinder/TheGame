@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThePrussianSoldier.Cha;
+using ThePrussianSoldier.Initialization__Start_Screen;
 
 namespace ThePrussianSoldier.TheChapters
 {
     class Chapter_1
     {
-
-        public int HitPoints { get; set; }
-
-        public Chapter_1()
+        PrimaryInformation Info;
+        public Chapter_1(PrimaryInformation info)
+        {
+            Info = info;
+        }
+        public void BeginnerChapter()
         {
             string First = "The War begins between France and Prussia. You are sent to the front lines in service of the King of Prussia. ";
             string Second = "The Battlefield is fierce and large, spanning as far as the eye can see. The French may have more numbers in this particular battle, ";
@@ -25,8 +27,6 @@ namespace ThePrussianSoldier.TheChapters
 
             string Fifth = "Nevertheless, you are now deep within the battlefield, you see French soldiers around you cut their way trought the Germanic folk. ";
             string Sixth = "A group of the Soldiers spot your detachment, and rush for glory of their false Emporer. You stand to lose everything from this single encounter.";
-
-            HitPoints = 10;
 
             for (int i = 0; i < First.Length; i++)
             {
@@ -53,7 +53,6 @@ namespace ThePrussianSoldier.TheChapters
             }
             Console.WriteLine("");
             
-            Choices:
             string Choice = Console.ReadLine();
             if(Choice != null)
             {
@@ -61,6 +60,7 @@ namespace ThePrussianSoldier.TheChapters
                 {
                     for (int i = 0; i < Scouts.Length; i++)
                     {
+                        Info.CMBT = 1;
                         Console.Write(Scouts[i]);
                         System.Threading.Thread.Sleep(10);
                     }
@@ -70,6 +70,7 @@ namespace ThePrussianSoldier.TheChapters
                 {
                     for (int i = 0; i < Cavalry.Length; i++)
                     {
+                        Info.CMBT = 2;
                         Console.Write(Cavalry[i]);
                         System.Threading.Thread.Sleep(10);
                     }
@@ -79,6 +80,7 @@ namespace ThePrussianSoldier.TheChapters
                 {
                     for (int i = 0; i < Vanguard.Length; i++)
                     {
+                        Info.CMBT = 3;
                         Console.Write(Vanguard[i]);
                         System.Threading.Thread.Sleep(10);
                     }
@@ -97,9 +99,5 @@ namespace ThePrussianSoldier.TheChapters
                 System.Threading.Thread.Sleep(10);
             }
             Console.WriteLine("");
-
-            
-
-
     }   }
 }

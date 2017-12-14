@@ -14,13 +14,31 @@ namespace ThePrussianSoldier.Initialization__Start_Screen
         {
             return Gold;
         }
-        public PrimaryInformation()
-        {
-           
-        }
         public void UpdateGold(int gold)
         {
             Gold = gold;
+        }
+
+        //BULLETS
+        public int Bullets { get; set; }
+        public int GetBullets()
+        {
+            return Bullets;
+        }
+        public void UpdateBullets(int bullets)
+        {
+            Bullets = bullets;
+        }
+
+        //STAMINA
+        public int Stamina { get; set; }
+        public int GetStamina()
+        {
+            return Stamina;
+        }
+        public void UpdateStamina(int stamina)
+        {
+            Stamina = stamina;
         }
 
         //HEALTH
@@ -77,6 +95,53 @@ namespace ThePrussianSoldier.Initialization__Start_Screen
         public void UpdateBandages(int bandages)
         {
             Bandages = bandages;
+        }
+
+        public int Package { get; set; }
+        public int GetPackage()
+        {
+            return Package;
+        }
+        public void UpdatePackage(int package)
+        {
+            Package = package;
+        }
+
+        public int Whiskey { get; set; }
+        public int GetWhiskeys()
+        {
+            return Whiskey;
+        }
+        public void UpdateWhiskey(int whiskey)
+        {
+            Whiskey = whiskey;
+        }
+
+        // // // // // // // // // // // // //
+        // // // CHAPTER DETERMINANT // // //
+        // // // // // // // // // // // // //
+
+        public int CPD { get; set; }
+        public int GetCPD()
+        {
+            return CPD;
+        }
+        public void UpdateCPD(int cpd)
+        {
+            CPD = cpd;
+        }
+
+        // // // // // // // // // // // // //
+        // // // CHAPTER DETERMINANT // // //
+        // // // // // // // // // // // // //
+        public int CMBT { get; set; }
+        public int GetCMBT()
+        {
+            return CPD;
+        }
+        public void UpdateCMBT(int cmbt)
+        {
+            CMBT = cmbt;
         }
     }
 }

@@ -18,6 +18,8 @@ namespace ThePrussianSoldier.TheChapters
 
             string Four = "You decide to rush towards the French camp, making it there quickly, alas, because of the rush";
             string Five = "your other squadmates are tired and hungry. Which means that you have to go at the assignment alone.";
+
+            Console.WriteLine("Chapter2");
         }
     }
 }

@@ -57,7 +57,7 @@ namespace ThePrussianSoldier.Initialization__Start_Screen
                 }
             }
 
-            var EnterTheChoiceScreen = new Chapter_1();
+            //var EnterTheChoiceScreen = new Chapter_1();
             
 
             //var Boi = new TheCombatSystem();
