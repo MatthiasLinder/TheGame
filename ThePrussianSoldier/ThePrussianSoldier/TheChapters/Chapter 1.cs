@@ -26,7 +26,8 @@ namespace ThePrussianSoldier.TheChapters
             string Cavalry = "...Cavalry, due to your speed with a sword compared to others.";
 
             string Fifth = "Nevertheless, you are now deep within the battlefield, you see French soldiers around you cut their way trought the Germanic folk. ";
-            string Sixth = "A group of the Soldiers spot your detachment, and rush for glory of their false Emporer. You stand to lose everything from this single encounter.";
+            string Sixth = "A group of the Soldiers spot your detachment, and rush for glory of their false Emporer. After a thundering roar of a French cannon,.";
+            string Seventh = "you find yourself in a millitary infirmary. After being treated, you exit the infirmary to find yourself in a small Town.";
 
             for (int i = 0; i < First.Length; i++)
             {
@@ -99,5 +100,11 @@ namespace ThePrussianSoldier.TheChapters
                 System.Threading.Thread.Sleep(10);
             }
             Console.WriteLine("");
-    }   }
+            for (int i = 0; i < Seventh.Length; i++)
+            {
+                Console.Write(Seventh[i]);
+                System.Threading.Thread.Sleep(10);
+            }
+            Console.WriteLine("");
+        }   }
 }
