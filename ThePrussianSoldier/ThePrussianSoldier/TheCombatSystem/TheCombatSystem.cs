@@ -22,11 +22,6 @@ namespace ThePrussianSoldier
             Random rnd = new Random();
             Console.WriteLine("");
             
-            //Primary Stats//
-            
-            int bullets = Info.GetBullets();
-            int stamina = Info.GetStamina();
-
             //Damage values//
             int attackdamageMin = 2 + (Info.AGILITY / 4);
             int attackdamageMax = 2 + (Info.AGILITY / 2);
@@ -146,19 +141,19 @@ namespace ThePrussianSoldier
 
                     if (Choice == "Bandages" && Info.Bandages > 0)
                     {
-                        Info.HP = Info.HP + 1;
+                        Info.HP = Info.HP + 5;
                         Console.WriteLine("You cover your wounds and return to battle.(+1HP)");
                         Console.WriteLine("Your health: {0}", Info.HP);
                     }
                     else if (Choice == "Package" && Info.Package > 0)
                     {
-                        Info.HP = Info.HP + 5;
+                        Info.HP = Info.HP + 10;
                         Console.WriteLine("You use the emergency package.");
                         Console.WriteLine("Your health: {0}", Info.HP);
                     }
                     else if (Choice == "Whiskey" && Info.Whiskey > 0)
                     {
-                        Info.HP = Info.HP - 15;
+                        Info.HP = Info.HP + 30;
                         Console.WriteLine("You drink the whiskey and charge back into battle with vigor.");
                         Console.WriteLine("Your health: {0}", Info.HP);
                     }
@@ -186,21 +181,21 @@ namespace ThePrussianSoldier
                         Console.WriteLine("");
                         Info.HP = Info.HP - 1;
                         Console.WriteLine("The Brit Engages");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberBRI == 2)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 2;
                         Console.WriteLine("The Brit Shoots his Rifle");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberBRI == 3)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 3;
                         Console.WriteLine("The Brit calls for help. Bullets fly towards you.");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                 }
 
@@ -214,21 +209,21 @@ namespace ThePrussianSoldier
                         Console.WriteLine("");
                         Info.HP = Info.HP - 1;
                         Console.WriteLine("The Frenchy Engages");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberFRN == 2)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 2;
                         Console.WriteLine("The Frenchy Shoots his Rifle");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberFRN == 3)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 3;
                         Console.WriteLine("The Frenchy calls for help. Bullets fly towards you.");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                 }
 
@@ -243,21 +238,21 @@ namespace ThePrussianSoldier
                         Console.WriteLine("");
                         Info.HP = Info.HP - 1;
                         Console.WriteLine("The Russian Engages");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberRUS == 2)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 2;
                         Console.WriteLine("The Russian Shoots his Rifle");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                     if (randomnumberRUS == 3)
                     {
                         Console.WriteLine("");
                         Info.HP = Info.HP - 3;
                         Console.WriteLine("The Russian calls for help. Bullets fly towards you.");
-                        Console.WriteLine(Info.HP);
+                        Console.WriteLine("You are reduced to {0} HP", Info.HP);
                     }
                 }
                 Info.Stamina = Info.Stamina + 1;

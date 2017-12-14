@@ -8,6 +8,16 @@ namespace ThePrussianSoldier.Initialization__Start_Screen
 {
     class PrimaryInformation
     {
+        public int GameInteger { get; set; }
+        public int GetGameInteger()
+        {
+            return GameInteger;
+        }
+        public void UpdateGameInteger(int gameinteger)
+        {
+            GameInteger = gameinteger;
+        }
+
         //GOLD
         public int Gold { get; set; }
         public int GetGold()

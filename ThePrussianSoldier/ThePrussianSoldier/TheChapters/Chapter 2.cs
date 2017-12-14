@@ -62,8 +62,9 @@ namespace ThePrussianSoldier.TheChapters
                 Console.Write(Three[i]);
                 System.Threading.Thread.Sleep(10);
             }
-            
+
             Console.WriteLine("");
+            Console.WriteLine("[Head towards the camp ; Rest for a while]");
             string firstchoice =Console.ReadLine();
             Console.WriteLine("");
 
@@ -123,6 +124,7 @@ namespace ThePrussianSoldier.TheChapters
                 System.Threading.Thread.Sleep(10);
             }
             Console.WriteLine("");
+            Console.WriteLine("[The Artillery Depot ; The Commander's Quaters]");
             string secondchoice = Console.ReadLine();
             Console.WriteLine("");
             if(secondchoice == "The Artillery Depot")

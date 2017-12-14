@@ -87,6 +87,10 @@ namespace ThePrussianSoldier.TheChapters
                     }
                     Console.WriteLine("");
                 }
+                else
+                {
+                    return;
+                }
             }
             for (int i = 0; i < Fifth.Length; i++)
             {

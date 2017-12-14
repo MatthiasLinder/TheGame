@@ -12,11 +12,8 @@ namespace ThePrussianSoldier
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
-
-
             WindowsMediaPlayer myplayer = new WindowsMediaPlayer();
             myplayer.URL = "Prussia - Preußens Gloria.mp3";
             myplayer.controls.play();
@@ -50,38 +47,28 @@ namespace ThePrussianSoldier
             Console.WriteLine("Please enter the name of the Command, that you want to execute.");
             Console.WriteLine("Note: Please play in Fullscreen");
             string FirstAction = Console.ReadLine();
-            
+
             //The game initiates from scratch...
+            var h = new PrimaryInformation();
 
             if (FirstAction == "Start")
             {
                 //The 1-st Chapter begins...
-                var h = new PrimaryInformation();
-
                 var BeginnerChapter = new Chapter_1(h);
                 BeginnerChapter.BeginnerChapter();
-
                 int GameInteger = 1;
 
                 //ENTER THE CHOICE SCREEN.
-                
                 var ToTheChoiceScreen1 = new TheChoiceScreen(h);
                 ToTheChoiceScreen1.Choices();
-
                 while (GameInteger == 1)
                 {
                     var eC= new TheCombatSystem(h);
                     eC.Combat();
-
                     ToTheChoiceScreen1.Choices();
                 }
-                
-                //Enter Combat
-                
-                
             }
         }
-
     }
     
 }

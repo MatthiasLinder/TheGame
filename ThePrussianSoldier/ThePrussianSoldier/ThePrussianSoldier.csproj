@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Initialization, Start Screen\1.3Introduction and Character Creation.cs" />
     <Compile Include="Initialization, Start Screen\1.2PrimaryInformation.cs" />
     <Compile Include="Initialization, Start Screen\1.1Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TheChapters\Chapter 1.cs" />
     <Compile Include="TheChapters\Chapter 2.cs" />
+    <Compile Include="TheChapters\Chapter 3 Part 2.cs" />
     <Compile Include="TheChapters\Chapter 3.cs" />
     <Compile Include="PrimaryScreen\TheChoiceScreen.cs" />
     <Compile Include="TheCombatSystem\TheCombatSystem.cs" />

@@ -147,6 +147,7 @@ namespace ThePrussianSoldier
 
                 if (Answer == "Next Chapter")
                 {
+                    Info.CPD = 1;
                     Console.WriteLine("Which Chapter?");
                     string v = Console.ReadLine();
                     if(Info.CPD == 0 && v == "First" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
@@ -157,7 +158,9 @@ namespace ThePrussianSoldier
                     if (Info.CPD == 1 && v == "Second" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
                     {
                         var S = new Chapter_3();
+                        S.LastChapter();
                         Info.CPD = 2;
+
                     }
                 }
             }
