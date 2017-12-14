@@ -149,24 +149,15 @@ namespace ThePrussianSoldier
                 {
                     Console.WriteLine("Which Chapter?");
                     string v = Console.ReadLine();
-                    if(Info.CPD == 0 && v == "First" && Info.STRENGTH == 10 && Info.AGILITY == 10 && Info.INTELLIGENCE == 10)
+                    if(Info.CPD == 0 && v == "First" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
                     {
                         var F = new Chapter_2();
                         Info.CPD = 1;
                     }
-                    if (Info.CPD == 1 && v == "Second" && Info.STRENGTH == 20 && Info.AGILITY == 20 && Info.INTELLIGENCE == 20)
+                    if (Info.CPD == 1 && v == "Second" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
                     {
                         var S = new Chapter_3();
                         Info.CPD = 2;
-                    }
-                    if (Info.CPD == 2 && v == "Third" && Info.STRENGTH == 30 && Info.AGILITY == 30 && Info.INTELLIGENCE == 30)
-                    {
-                        var T = new Chapter_4();
-                        Info.CPD = 3;
-                    }
-                    if (Info.CPD == 3 && v == "Fourth" && Info.STRENGTH == 40 && Info.AGILITY == 40 && Info.INTELLIGENCE == 40)
-                    {
-                        var FO = new Chapter_5();
                     }
                 }
             }

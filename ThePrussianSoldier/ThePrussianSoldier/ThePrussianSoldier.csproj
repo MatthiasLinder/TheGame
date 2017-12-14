@@ -49,8 +49,6 @@
     <Compile Include="TheChapters\Chapter 1.cs" />
     <Compile Include="TheChapters\Chapter 2.cs" />
     <Compile Include="TheChapters\Chapter 3.cs" />
-    <Compile Include="TheChapters\Chapter 4.cs" />
-    <Compile Include="TheChapters\Chapter 5.cs" />
     <Compile Include="PrimaryScreen\TheChoiceScreen.cs" />
     <Compile Include="TheCombatSystem\TheCombatSystem.cs" />
   </ItemGroup>
