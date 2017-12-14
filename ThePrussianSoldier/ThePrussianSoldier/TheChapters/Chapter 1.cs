@@ -55,8 +55,10 @@ namespace ThePrussianSoldier.TheChapters
             Console.WriteLine("");
             
             string Choice = Console.ReadLine();
-            if(Choice != null)
-            {
+            while (true)
+            { 
+             if (Choice != null)
+             {
                 if (Choice == "Scouts")
                 {
                     for (int i = 0; i < Scouts.Length; i++)
@@ -66,7 +68,8 @@ namespace ThePrussianSoldier.TheChapters
                         System.Threading.Thread.Sleep(10);
                     }
                     Console.WriteLine("");
-                }
+                        break;
+                    }
                 if (Choice == "Cavalry")
                 {
                     for (int i = 0; i < Cavalry.Length; i++)
@@ -76,7 +79,8 @@ namespace ThePrussianSoldier.TheChapters
                         System.Threading.Thread.Sleep(10);
                     }
                     Console.WriteLine("");
-                }
+                        break;
+                    }
                 if (Choice == "Vanguard")
                 {
                     for (int i = 0; i < Vanguard.Length; i++)
@@ -86,11 +90,13 @@ namespace ThePrussianSoldier.TheChapters
                         System.Threading.Thread.Sleep(10);
                     }
                     Console.WriteLine("");
+                        break;
                 }
                 else
                 {
-                    return;
+                    Choice = Console.ReadLine();
                 }
+             }
             }
             for (int i = 0; i < Fifth.Length; i++)
             {

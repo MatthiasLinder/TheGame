@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Initialization, Start Screen\1.2PrimaryInformation.cs" />
     <Compile Include="Initialization, Start Screen\1.1Program.cs" />
+    <Compile Include="PrimaryScreen\Ending.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TheChapters\Chapter 1.cs" />
     <Compile Include="TheChapters\Chapter 2.cs" />
