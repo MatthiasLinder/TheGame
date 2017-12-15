@@ -157,12 +157,12 @@ namespace ThePrussianSoldier
                     Console.WriteLine("[Second - STR 35 AGI 35 INT 35]");
 
                     string v = Console.ReadLine();
-                    if(Info.CPD >= 0 && v == "First" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
+                    if(Info.CPD >= 0 && v == "First" && Info.STRENGTH >= 20 && Info.AGILITY >= 20 && Info.INTELLIGENCE >= 20)
                     {
                         var F = new Chapter_2();
                         Info.CPD = 1;
                     }
-                    if (Info.CPD >= 1 && v == "Second" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
+                    if (Info.CPD >= 1 && v == "Second" && Info.STRENGTH >= 35 && Info.AGILITY >= 35 && Info.INTELLIGENCE >= 35)
                     {
                         var S = new Chapter_3();
                         S.LastChapter();
