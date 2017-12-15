@@ -38,7 +38,7 @@ namespace ThePrussianSoldier
             Console.WriteLine("                       |  Start  |");
             Console.WriteLine("                       |---------|");
             Console.WriteLine("                       |---------|");
-            Console.WriteLine("                       |Load Game|");
+            Console.WriteLine("                       |         |");
             Console.WriteLine("                       |---------|");
             Console.WriteLine("                       |---------|");
             Console.WriteLine("                       |  Exit   |");
@@ -46,7 +46,12 @@ namespace ThePrussianSoldier
 
             Console.WriteLine("Please enter the name of the Command, that you want to execute.");
             Console.WriteLine("Note: Please play in Fullscreen");
+            Console.WriteLine("");
             string FirstAction = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("");
 
             //The game initiates from scratch...
             var h = new PrimaryInformation();
@@ -57,16 +62,31 @@ namespace ThePrussianSoldier
                 var BeginnerChapter = new Chapter_1(h);
                 BeginnerChapter.BeginnerChapter();
                 int GameInteger = 1;
+                Console.WriteLine("");
+                Console.WriteLine("Press any key to continue");
+                Console.ReadKey();
+
+                Console.Clear();
+
+                Console.WriteLine("");
 
                 //ENTER THE CHOICE SCREEN.
                 var ToTheChoiceScreen1 = new TheChoiceScreen(h);
+                var eC = new TheCombatSystem(h);
                 ToTheChoiceScreen1.Choices();
+                Console.Clear();
                 while (GameInteger == 1)
                 {
-                    var eC= new TheCombatSystem(h);
                     eC.Combat();
+                    Console.Clear();
                     ToTheChoiceScreen1.Choices();
                 }
+            }
+            if (FirstAction == "Exit")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Okay, you filthy casual.");
+                System.Environment.Exit(1);
             }
         }
     }

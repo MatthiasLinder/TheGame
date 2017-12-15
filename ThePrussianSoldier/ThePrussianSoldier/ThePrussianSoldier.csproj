@@ -48,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TheChapters\Chapter 1.cs" />
     <Compile Include="TheChapters\Chapter 2.cs" />
-    <Compile Include="TheChapters\Chapter 3 Part 2.cs" />
     <Compile Include="TheChapters\Chapter 3.cs" />
     <Compile Include="PrimaryScreen\TheChoiceScreen.cs" />
     <Compile Include="TheCombatSystem\TheCombatSystem.cs" />

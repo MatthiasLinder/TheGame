@@ -27,6 +27,7 @@ namespace ThePrussianSoldier
             Info.STRENGTH = 1;
             Info.INTELLIGENCE = 1;
             Info.AGILITY = 1;
+            Info.CPD = 1;
         }
         ////////////////////////
         //Initiate Choice Screen
@@ -38,9 +39,10 @@ namespace ThePrussianSoldier
             while (ChapterDeterminant == 0)
             {
                 Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
-                Console.WriteLine("[HP:{0} AMMO: GOLD:{1} ]", Info.HP, Info.Gold);
+                Console.WriteLine("[HP:{0} AMMO:{1} GOLD:{2} ]", Info.HP, Info.Bullets, Info.Gold);
                 Console.WriteLine("You are marching along a lonely road, what do you do?");
                 Console.WriteLine("[Town, Patrol, Guard, Train, Drill, Rest, Stats]");
+                Console.WriteLine("[You can write : Next Chapter : to advance to the next chapter.");
                 Console.WriteLine("");
                 string Answer = Console.ReadLine();
                 Console.WriteLine("");
@@ -147,15 +149,20 @@ namespace ThePrussianSoldier
 
                 if (Answer == "Next Chapter")
                 {
-                    Info.CPD = 1;
-                    Console.WriteLine("Which Chapter?");
+                    
+                    Console.WriteLine("Which Chapter? You can actiavte");
+                    Console.WriteLine("two chapters from here.");
+                    Console.WriteLine(" If you have the stats");
+                    Console.WriteLine("[First - STR 20 AGI 20 INT 20]");
+                    Console.WriteLine("[Second - STR 35 AGI 35 INT 35]");
+
                     string v = Console.ReadLine();
-                    if(Info.CPD == 0 && v == "First" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
+                    if(Info.CPD >= 0 && v == "First" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
                     {
                         var F = new Chapter_2();
                         Info.CPD = 1;
                     }
-                    if (Info.CPD == 1 && v == "Second" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
+                    if (Info.CPD >= 1 && v == "Second" && Info.STRENGTH >= 1 && Info.AGILITY >= 1 && Info.INTELLIGENCE >= 1)
                     {
                         var S = new Chapter_3();
                         S.LastChapter();

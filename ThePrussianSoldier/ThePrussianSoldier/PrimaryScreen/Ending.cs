@@ -10,19 +10,25 @@ namespace ThePrussianSoldier.PrimaryScreen
     {
         public Ending()
         {
+            Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("");
+            Console.WriteLine("███████ █████ █████   █         █    ██    █    █ █   █      █ ██████      █████ ██████ █   █ ██    █ ██    █████ ██   ");
+            Console.WriteLine("█       █     █    █  ██       ██   █  █   ██   █  █ █       █ █           █     █    █ █   █ █ █   █ █ ██  █     █ ██ ");
+            Console.WriteLine("█       █     █    █  █ █     █ █   █  █   █ █  █   █        █ ██████      ████  █    █ █   █ █  █  █ █   █ █     █   █");
+            Console.WriteLine("█  ████ ████  █████   █  █   █  █  █    █  █  █ █   █        █      █      █     █    █ █   █ █   █ █ █   █ ███   █   █");
+            Console.WriteLine("█     █ █     █    █  █   █ █   █ █ ████ █ █   ██   █        █      █      █     █    █ █   █ █    ██ █ ██  █     █ ██ ");
+            Console.WriteLine("███████ █████ █     █ █    █    █ █      █ █    █   █        █ ██████      █     ██████ █████ █     █ ██    █████ ██   ");
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("                        Congratulations, you have won the game of KAISERREICH.");
+            Console.WriteLine("                     You will forever be remembered in the germanic halls of glory.");
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+
+            Console.ReadKey();
+            System.Environment.Exit(1);
         }
+
     }
 }

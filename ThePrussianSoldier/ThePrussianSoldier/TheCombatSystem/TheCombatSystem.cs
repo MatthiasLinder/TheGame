@@ -39,21 +39,20 @@ namespace ThePrussianSoldier
             if (CurrentEnemy == "")
             {
                 //Determine the enemy type//
-                int randomnumber1 = rnd.Next(1, 8);
-                Console.WriteLine(randomnumber1);
-                if (randomnumber1 >= 6)
+                int randomnumber1 = rnd.Next(1, 3);
+                if (randomnumber1 == 1)
                 {
-                    Console.WriteLine("British Soldier");
+                    Console.WriteLine("You encounter a British Soldier");
                     CurrentEnemy = "Brit";
                 }
-                if (randomnumber1 <= 3)
+                if (randomnumber1 == 2)
                 {
-                    Console.WriteLine("French Soldier");
+                    Console.WriteLine("You encounter a French Soldier");
                     CurrentEnemy = "Frenchy";
                 }
-                if (randomnumber1 >= 3 && randomnumber1 <= 6)
+                if (randomnumber1 == 3)
                 {
-                    Console.WriteLine("Russian Soldier");
+                    Console.WriteLine("You encounter a Russian Soldier");
                     CurrentEnemy = "Russian";
                 }
             }
@@ -73,6 +72,8 @@ namespace ThePrussianSoldier
 
                 string action = Console.ReadLine();
                 Console.WriteLine("");
+                Console.Clear();
+                Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
                 if (action == "Charge")
                 {
@@ -86,8 +87,7 @@ namespace ThePrussianSoldier
                     else if (randomnumber >= 51)
                     {
                         enemyhealth = enemyhealth - attackdamageMax;
-                        Console.WriteLine(enemyhealth);
-                        Console.WriteLine("You charge forth in the name of the Kaiser");
+                        Console.WriteLine("You charge forth in the name of the Prussian King.");
                         Console.WriteLine("Your foe is now reduced to: {0}HP", enemyhealth);
                     }
                 }
@@ -99,38 +99,45 @@ namespace ThePrussianSoldier
                         Console.WriteLine("You fired your musket and hit.");
                         enemyhealth = enemyhealth - bulletdamage;
                         Info.Bullets = Info.Bullets - 1;
-                        Console.WriteLine(enemyhealth);
+                        Console.WriteLine("Your foe is now reduced to: {0}HP", enemyhealth);
                     }
                     if (randomnumber < 1.5)
                     {
                         Console.WriteLine("You fired your musket and missed.");
+                        Console.WriteLine("Your foe is now reduced to: {0}HP", enemyhealth);
                     }
                 }
                 if(action == "Special")
                 {
                     if(Info.CMBT == 1)
                     {
+                        Console.WriteLine("");
                         Console.WriteLine("As a Scout of his Majesty Wilhelm, you pull yourself together to keep the fight alive.");
                         Console.WriteLine("You regenerate 15 HP");
                         Info.HP = Info.HP + 15;
                         Info.Stamina = Info.Stamina - 5;
+                        Console.WriteLine("");
                     }
                     if (Info.CMBT == 2)
                     {
+                        Console.WriteLine("");
                         Console.WriteLine("As part of the Cavalry of Prussia, you charge into battle horse and musket.");
                         int damageCavalry = enemyhealth - ((Info.AGILITY / 2) - (Info.INTELLIGENCE / 2));
                         Console.WriteLine("You deliver damage equal to {0} HP", damageCavalry);
                         enemyhealth = enemyhealth - ((Info.AGILITY / 2) - (Info.INTELLIGENCE / 2));
                         Info.Stamina = Info.Stamina - 5;
+                        Console.WriteLine("");
                     }
                     if (Info.CMBT == 3)
                     {
+                        Console.WriteLine("");
                         Console.WriteLine("As the Vanguard of the Prussian army, prepare yourself and then smash into the enemy.");
                         enemyhealth = enemyhealth - (Info.STRENGTH / 2);
                         int damageVanguard = enemyhealth - (Info.STRENGTH / 2);
                         Console.WriteLine("You deliver damage equal to {0} HP and also regenerate 5 HP yourself.", damageVanguard);
                         Info.HP = Info.HP + 5;
                         Info.Stamina = Info.Stamina - 5;
+                        Console.WriteLine("");
                     }
                 }
                 if (action == "Item")
@@ -141,21 +148,27 @@ namespace ThePrussianSoldier
 
                     if (Choice == "Bandages" && Info.Bandages > 0)
                     {
+                        Console.WriteLine("");
                         Info.HP = Info.HP + 5;
                         Console.WriteLine("You cover your wounds and return to battle.(+1HP)");
                         Console.WriteLine("Your health: {0}", Info.HP);
+                        Console.WriteLine("");
                     }
                     else if (Choice == "Package" && Info.Package > 0)
                     {
+                        Console.WriteLine("");
                         Info.HP = Info.HP + 10;
                         Console.WriteLine("You use the emergency package.");
                         Console.WriteLine("Your health: {0}", Info.HP);
+                        Console.WriteLine("");
                     }
                     else if (Choice == "Whiskey" && Info.Whiskey > 0)
                     {
+                        Console.WriteLine("");
                         Info.HP = Info.HP + 30;
                         Console.WriteLine("You drink the whiskey and charge back into battle with vigor.");
                         Console.WriteLine("Your health: {0}", Info.HP);
+                        Console.WriteLine("");
                     }
                     else
                     {
@@ -175,7 +188,7 @@ namespace ThePrussianSoldier
                 if (CurrentEnemy == BritishSoldier)
                 {
                     int randomnumberBRI = rnd.Next(1, 3);
-                    Console.WriteLine(randomnumberBRI);
+                    
                     if (randomnumberBRI == 1)
                     {
                         Console.WriteLine("");
@@ -203,7 +216,7 @@ namespace ThePrussianSoldier
                 if (CurrentEnemy == FrenchSoldier)
                 {
                     int randomnumberFRN = rnd.Next(1, 3);
-                    Console.WriteLine(randomnumberFRN);
+                    
                     if (randomnumberFRN == 1)
                     {
                         Console.WriteLine("");
@@ -231,7 +244,7 @@ namespace ThePrussianSoldier
                 if (CurrentEnemy == RussianSoldier)
                 {
                     int randomnumberRUS = rnd.Next(1, 3);
-                    Console.WriteLine(randomnumberRUS);
+                    
 
                     if (randomnumberRUS == 1)
                     {
@@ -256,7 +269,6 @@ namespace ThePrussianSoldier
                     }
                 }
                 Info.Stamina = Info.Stamina + 1;
-
                 Console.WriteLine("---------------------------------------------------------------------------------*-*PRUSSEN-GLORIA*-*------------------");
             }
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
