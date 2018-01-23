@@ -47,19 +47,19 @@ namespace ThePrussianSoldier.TheChapters
             for (int i = 0; i < One.Length; i++)
             {
                 Console.Write(One[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Two.Length; i++)
             {
                 Console.Write(Two[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Three.Length; i++)
             {
                 Console.Write(Three[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
 
             Console.WriteLine("");
@@ -73,14 +73,14 @@ namespace ThePrussianSoldier.TheChapters
                 for (int i = 0; i < Four.Length; i++)
                 {
                     Console.Write(Four[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
 
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Five.Length; i++)
                 {
                     Console.Write(Five[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
             }
             if(firstchoice == "Rest for a while")
@@ -89,38 +89,38 @@ namespace ThePrussianSoldier.TheChapters
                 for (int i = 0; i < Six.Length; i++)
                 {
                     Console.Write(Six[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Seven.Length; i++)
                 {
                     Console.Write(Seven[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
             }
             Console.WriteLine("");
             for (int i = 0; i < Eight.Length; i++)
             {
                 Console.Write(Eight[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Nine.Length; i++)
             {
                 Console.Write(Nine[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Ten.Length; i++)
             {
                 Console.Write(Ten[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Additional.Length; i++)
             {
                 Console.Write(Additional[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             Console.WriteLine("[The Artillery Depot ; The Commander's Quaters]");
@@ -132,19 +132,19 @@ namespace ThePrussianSoldier.TheChapters
                 for (int i = 0; i < Eleven.Length; i++)
                 {
                     Console.Write(Eleven[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Twelve.Length; i++)
                 {
                     Console.Write(Twelve[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Thirteen.Length; i++)
                 {
                     Console.Write(Thirteen[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 Console.WriteLine("Press any key to continue");
@@ -156,19 +156,19 @@ namespace ThePrussianSoldier.TheChapters
                 for (int i = 0; i < Additional2.Length; i++)
                 {
                     Console.Write(Additional2[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Fourteen.Length; i++)
                 {
                     Console.Write(Fourteen[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 for (int i = 0; i < Fifteen.Length; i++)
                 {
                     Console.Write(Fifteen[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 Console.WriteLine("Press any key to continue");

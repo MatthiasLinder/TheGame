@@ -35,29 +35,31 @@ namespace ThePrussianSoldier.TheChapters
             for (int i = 0; i < First.Length; i++)
             {
                 Console.Write(First[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Second.Length; i++)
             {
                 Console.Write(Second[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Third.Length; i++)
             {
                 Console.Write(Third[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Fourth.Length; i++)
             {
                 Console.Write(Fourth[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
-            
+            Console.WriteLine("");
+
             string Choice = Console.ReadLine();
+            Console.WriteLine("");
             while (true)
             { 
              if (Choice != null)
@@ -68,7 +70,7 @@ namespace ThePrussianSoldier.TheChapters
                     {
                         Info.CMBT = 1;
                         Console.Write(Scouts[i]);
-                        System.Threading.Thread.Sleep(50);
+                        System.Threading.Thread.Sleep(15);
                     }
                     Console.WriteLine("");
                         break;
@@ -79,7 +81,7 @@ namespace ThePrussianSoldier.TheChapters
                     {
                         Info.CMBT = 2;
                         Console.Write(Cavalry[i]);
-                        System.Threading.Thread.Sleep(50);
+                        System.Threading.Thread.Sleep(15);
                     }
                     Console.WriteLine("");
                         break;
@@ -90,7 +92,7 @@ namespace ThePrussianSoldier.TheChapters
                     {
                         Info.CMBT = 3;
                         Console.Write(Vanguard[i]);
-                        System.Threading.Thread.Sleep(50);
+                        System.Threading.Thread.Sleep(15);
                     }
                     Console.WriteLine("");
                         break;
@@ -104,19 +106,19 @@ namespace ThePrussianSoldier.TheChapters
             for (int i = 0; i < Fifth.Length; i++)
             {
                 Console.Write(Fifth[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Sixth.Length; i++)
             {
                 Console.Write(Sixth[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Seventh.Length; i++)
             {
                 Console.Write(Seventh[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
         }   }

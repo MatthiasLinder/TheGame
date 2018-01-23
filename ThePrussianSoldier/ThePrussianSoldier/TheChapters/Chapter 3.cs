@@ -41,32 +41,32 @@ namespace ThePrussianSoldier.TheChapters
             for (int i = 0; i < One.Length; i++)
             {
                 Console.Write(One[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Two.Length; i++)
             {
                 Console.Write(Two[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Three.Length; i++)
             {
                 Console.Write(Three[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
             Console.WriteLine("");
             for (int i = 0; i < Four.Length; i++)
             {
                 Console.Write(Four[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
 
             Console.WriteLine("");
             for (int i = 0; i < Five.Length; i++)
             {
                 Console.Write(Five[i]);
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(15);
             }
 
             Console.WriteLine("Two weapons lay infront of you. Which do you choose?");
@@ -80,35 +80,35 @@ namespace ThePrussianSoldier.TheChapters
                 for (int i = 0; i < Six.Length; i++)
                 {
                     Console.Write(Six[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
 
                 Console.WriteLine("");
                 for (int i = 0; i < Seven.Length; i++)
                 {
                     Console.Write(Seven[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
 
                 Console.WriteLine("");
                 for (int i = 0; i < Eight.Length; i++)
                 {
                     Console.Write(Eight[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
 
                 Console.WriteLine("");
                 for (int i = 0; i < Nine.Length; i++)
                 {
                     Console.Write(Nine[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
 
                 Console.WriteLine("");
                 for (int i = 0; i < Ten.Length; i++)
                 {
                     Console.Write(Ten[i]);
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(15);
                 }
                 Console.WriteLine("");
                 Console.WriteLine("Press any key to continue");
